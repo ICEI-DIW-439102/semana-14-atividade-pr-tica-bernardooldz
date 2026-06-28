@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iBook — Cadastrar Autor</title>
+  <link rel="icon" href="assets/images/logo/logo-icon-ibook.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/crud.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo/logo-horizontal.png" alt="iBook" class="navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#destaques">Destaques</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#autores">Autores</a></li>
+          <li class="nav-item"><a class="nav-link" href="visualizacao.html"><i class="fa-solid fa-chart-bar me-1"></i>Estatísticas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="crud-form-card">
+            <h2 class="crud-form-titulo"><i class="fa-solid fa-user-plus me-2"></i>Cadastrar Novo Autor</h2>
+
+            <div id="msg-feedback" class="mb-3" style="display:none;"></div>
+
+            <form id="form-autor" novalidate>
+              <div class="mb-3">
+                <label class="crud-label form-label" for="form-nome">Nome</label>
+                <input type="text" id="form-nome" class="form-control crud-input" placeholder="Nome completo do autor" required>
+              </div>
+              <div class="mb-3">
+                <label class="crud-label form-label" for="form-genero">Gênero Literário</label>
+                <input type="text" id="form-genero" class="form-control crud-input" placeholder="Ex: Fantasia, Romance, Suspense...">
+              </div>
+              <div class="mb-3">
+                <label class="crud-label form-label" for="form-biografia">Biografia</label>
+                <textarea id="form-biografia" class="form-control crud-input" rows="4" placeholder="Uma breve descrição sobre o autor..."></textarea>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="crud-label form-label" for="form-nacionalidade">Nacionalidade</label>
+                  <input type="text" id="form-nacionalidade" class="form-control crud-input" placeholder="Ex: Brasil, Portugal...">
+                </div>
+                <div class="col-md-6">
+                  <label class="crud-label form-label" for="form-inicio">Início da Carreira</label>
+                  <input type="number" id="form-inicio" class="form-control crud-input" placeholder="Ex: 2010" min="1900" max="2099">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="crud-label form-label" for="form-seguidores">Seguidores</label>
+                <input type="number" id="form-seguidores" class="form-control crud-input" placeholder="Ex: 150000" min="0">
+              </div>
+              <div class="mb-3">
+                <label class="crud-label form-label" for="form-imagem">URL da Imagem Principal</label>
+                <input type="text" id="form-imagem" class="form-control crud-input" placeholder="URL ou caminho da imagem do autor">
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="form-destaque">
+                <label class="crud-label form-check-label" for="form-destaque">Exibir no carrossel de destaques</label>
+              </div>
+              <div class="d-flex gap-2">
+                <button type="submit" class="btn-crud-salvar"><i class="fa-solid fa-floppy-disk me-2"></i>Salvar Autor</button>
+                <a href="index.html" class="btn-crud-cancelar text-decoration-none"><i class="fa-solid fa-xmark me-1"></i>Cancelar</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-custom py-4">
+    <div class="container footer-inner">
+      <img src="assets/images/logo/logo-horizontal.png" alt="iBook" class="footer-logo">
+      <p class="mb-0"><strong>iBook</strong> &copy; 2025 — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+:root {
+  --azul: #2C3B4D;
+  --azul-escuro: #1B2632;
+  --bege: #EEE9DF;
+  --bege-medio: #C9C1B1;
+  --laranja: #FFB162;
+  --marrom: #A35139;
+  --branco: #FFFFFF;
+  --texto-fraco: #7A7060;
+  --fonte-titulo: 'Poppins', sans-serif;
+  --fonte-corpo: 'Merriweather', serif;
+  --raio-card: 14px;
+  --sombra-card: 4px 4px 0px var(--azul);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  background-color: var(--branco);
+  color: var(--azul);
+}
+
+.bg-bege {
+  background-color: var(--bege);
+}
+
+.text-laranja {
+  color: var(--laranja) !important;
+}
+
+.secao-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--azul);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.marcador {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--laranja);
+  border-radius: 2px;
+  transform: rotate(45deg);
+  border: 1.5px solid var(--azul);
+  flex-shrink: 0;
+}
+
+.bg-dark-custom {
+  background-color: var(--azul-escuro) !important;
+  border-bottom: 2px solid var(--azul);
+}
+
+.navbar-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar .nav-link {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--bege-medio) !important;
+  padding: 6px 16px;
+  border-radius: 8px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--laranja) !important;
+  background-color: rgba(255, 177, 98, 0.1);
+}
+
+.footer-custom {
+  background-color: var(--azul-escuro);
+  color: var(--bege-medio);
+  border-top: 2px solid var(--azul);
+  font-family: var(--fonte-titulo);
+  font-size: 0.85rem;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footer-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 576px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

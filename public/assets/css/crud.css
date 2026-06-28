@@ -1,0 +1,79 @@
+.crud-form-card {
+  background-color: var(--branco);
+  border: 2px solid var(--azul);
+  border-radius: var(--raio-card);
+  box-shadow: var(--sombra-card);
+  padding: 28px 24px;
+}
+
+.crud-form-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--azul);
+  margin-bottom: 20px;
+}
+
+.crud-label {
+  font-family: var(--fonte-titulo);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--azul);
+}
+
+.crud-input {
+  border: 2px solid var(--azul);
+  border-radius: 10px;
+  font-family: var(--fonte-corpo);
+  font-size: 0.82rem;
+  color: var(--azul);
+  transition: border-color 0.15s;
+}
+
+.crud-input:focus {
+  border-color: var(--laranja);
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-crud-salvar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--laranja);
+  color: var(--azul-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 9px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--azul-escuro);
+  box-shadow: 3px 3px 0 var(--azul-escuro);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-crud-salvar:hover {
+  background-color: #f0a050;
+}
+
+.btn-crud-cancelar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--texto-fraco);
+  font-family: var(--fonte-titulo);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: 2px solid var(--bege-medio);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-crud-cancelar:hover {
+  background-color: var(--bege);
+  color: var(--azul);
+}

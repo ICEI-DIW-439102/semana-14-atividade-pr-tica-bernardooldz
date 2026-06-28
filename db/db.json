@@ -1,4 +1,346 @@
 {
+  "autores": [
+    {
+      "id": "1",
+      "nome": "Aurora Valença",
+      "genero": "Fantasia",
+      "biografia": "Escritora conhecida por criar mundos mágicos inspirados em lendas antigas e elementos da natureza.",
+      "inicioCarreira": 2016,
+      "nacionalidade": "Brasil",
+      "seguidores": 187500,
+      "destaque": true,
+      "imagem_principal": "assets/images/autores/laura-adai-enkfbbb9yf8-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "As Crônicas de Eldoria",
+          "ano": 2018,
+          "descricao": "Uma jornada épica através de reinos esquecidos.",
+          "imagem": "assets/images/livros/fontis-ag-mnRIv1OLby4-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "A Guardiã das Estrelas",
+          "ano": 2020,
+          "descricao": "Uma jovem descobre um poder capaz de alterar o destino do mundo.",
+          "imagem": "assets/images/livros/fontis-ag-XFVIZMF0ZF8-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "O Reino das Névoas",
+          "ano": 2023,
+          "descricao": "Mistérios e magia envolvem um reino perdido.",
+          "imagem": "assets/images/livros/pelle-martin-6fzKe8W6nq4-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Lucas Monteiro",
+      "genero": "Ficção Científica",
+      "biografia": "Autor apaixonado por tecnologia, exploração espacial e inteligência artificial.",
+      "inicioCarreira": 2015,
+      "nacionalidade": "Portugal",
+      "seguidores": 214000,
+      "destaque": true,
+      "imagem_principal": "assets/images/autores/amir-seilsepour-5vg_SarQimA-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "Horizonte de Titânio",
+          "ano": 2017,
+          "descricao": "Colonos enfrentam desafios em um planeta distante.",
+          "imagem": "assets/images/livros/ikigloo-dgpCQhcQWOA-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "Código Ômega",
+          "ano": 2019,
+          "descricao": "Uma IA desenvolve consciência própria.",
+          "imagem": "assets/images/livros/amol-srivastava-uOYc6OlgpUI-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "Estação Zero",
+          "ano": 2022,
+          "descricao": "Segredos escondidos em uma estação espacial abandonada.",
+          "imagem": "assets/images/livros/josh-felise-yIMy3ERBc3o-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "Helena Duarte",
+      "genero": "Romance",
+      "biografia": "Especialista em romances contemporâneos com foco em relações humanas.",
+      "inicioCarreira": 2018,
+      "nacionalidade": "Brasil",
+      "seguidores": 325000,
+      "destaque": true,
+      "imagem_principal": "assets/images/autores/conor-obrien-nKZuhvCGGQU-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "Cartas Para o Amanhã",
+          "ano": 2019,
+          "descricao": "Uma história emocionante sobre reencontros.",
+          "imagem": "assets/images/livros/karen-zhao-2bqXqr4GeCg-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "Entre Estações",
+          "ano": 2021,
+          "descricao": "Dois desconhecidos conectados pelo acaso.",
+          "imagem": "assets/images/livros/sophia-baboolal-rMYrkFfw36U-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "Além do Horizonte Azul",
+          "ano": 2024,
+          "descricao": "Uma viagem transformadora pelo autoconhecimento.",
+          "imagem": "assets/images/livros/thought-catalog-GzYLoRYrX90-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "Vinícius Noronha",
+      "genero": "Suspense",
+      "biografia": "Criador de histórias cheias de mistérios, investigações e reviravoltas.",
+      "inicioCarreira": 2014,
+      "nacionalidade": "Brasil",
+      "seguidores": 198000,
+      "destaque": false,
+      "imagem_principal": "assets/images/autores/cesar-rincon-XHVpWcr5grQ-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "A Última Chave",
+          "ano": 2016,
+          "descricao": "Um segredo antigo ameaça vir à tona.",
+          "imagem": "assets/images/livros/thought-catalog-Q7sGp9MStSY-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "Sombras da Cidade",
+          "ano": 2019,
+          "descricao": "Mistérios escondidos em uma metrópole moderna.",
+          "imagem": "assets/images/livros/thought-catalog-V5BGaJ0VaLU-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "Arquivo 27",
+          "ano": 2023,
+          "descricao": "Um documento desaparecido pode mudar tudo.",
+          "imagem": "assets/images/livros/tim-alex-1i-P178kxHQ-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "nome": "Clara Menezes",
+      "genero": "Fantasia Urbana",
+      "biografia": "Mistura elementos mágicos com cenários contemporâneos.",
+      "inicioCarreira": 2017,
+      "nacionalidade": "Argentina",
+      "seguidores": 156000,
+      "destaque": true,
+      "imagem_principal": "assets/images/autores/glen-hodson-NlHGKAZ3jCI-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "Rua das Sombras",
+          "ano": 2018,
+          "descricao": "Uma rua comum esconde criaturas extraordinárias.",
+          "imagem": "assets/images/livros/zia-king-S7RCVK2PEhk-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "Portal 13",
+          "ano": 2021,
+          "descricao": "Uma passagem secreta entre dimensões.",
+          "imagem": "assets/images/livros/pylyp-sukhenko--jaa_zXcH5E-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "Cidade Encantada",
+          "ano": 2024,
+          "descricao": "Magia e tecnologia coexistem em segredo.",
+          "imagem": "assets/images/livros/nmg-network-_awzRovsBDU-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "nome": "Gabriel Tavares",
+      "genero": "Aventura",
+      "biografia": "Escritor de aventuras voltadas para jovens leitores.",
+      "inicioCarreira": 2013,
+      "nacionalidade": "Brasil",
+      "seguidores": 142000,
+      "destaque": false,
+      "imagem_principal": "assets/images/autores/christian-buehner-84E44EdD18o-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "Expedição Atlântica",
+          "ano": 2015,
+          "descricao": "Uma jornada pelos mistérios do oceano.",
+          "imagem": "assets/images/livros/mridula-gupta-M5nRkYqfUoE-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "A Ilha Perdida",
+          "ano": 2018,
+          "descricao": "Um grupo de amigos encontra um mapa lendário.",
+          "imagem": "assets/images/livros/elin-melaas-6gjiUmp2k_8-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "O Vale dos Ventos",
+          "ano": 2022,
+          "descricao": "Uma aventura em uma região inexplorada.",
+          "imagem": "assets/images/livros/elin-melaas-K8oOs0oFBME-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "nome": "Sofia Almeida",
+      "genero": "Drama",
+      "biografia": "Suas histórias exploram emoções profundas e relações familiares.",
+      "inicioCarreira": 2016,
+      "nacionalidade": "Portugal",
+      "seguidores": 279000,
+      "destaque": false,
+      "imagem_principal": "assets/images/autores/daniil-lobachev-XAo09LtQiAQ-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "Entre Nós",
+          "ano": 2017,
+          "descricao": "Uma narrativa sobre amizade e superação.",
+          "imagem": "assets/images/livros/fontis-ag-mnRIv1OLby4-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "Dias de Chuva",
+          "ano": 2020,
+          "descricao": "Uma família enfrenta mudanças inesperadas.",
+          "imagem": "assets/images/livros/fontis-ag-XFVIZMF0ZF8-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "Quando o Sol Voltar",
+          "ano": 2024,
+          "descricao": "Esperança em tempos difíceis.",
+          "imagem": "assets/images/livros/pelle-martin-6fzKe8W6nq4-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "nome": "Fábio Martins",
+      "genero": "Distopia",
+      "biografia": "Autor de narrativas futuristas e sociedades alternativas.",
+      "inicioCarreira": 2015,
+      "nacionalidade": "Canadá",
+      "seguidores": 301000,
+      "destaque": false,
+      "imagem_principal": "assets/images/autores/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "Projeto Aurora",
+          "ano": 2018,
+          "descricao": "Uma sociedade controlada por algoritmos.",
+          "imagem": "assets/images/livros/ikigloo-dgpCQhcQWOA-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "Cidade Vertical",
+          "ano": 2021,
+          "descricao": "A vida em uma megacidade dividida por classes.",
+          "imagem": "assets/images/livros/amol-srivastava-uOYc6OlgpUI-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "O Último Sinal",
+          "ano": 2024,
+          "descricao": "Uma mensagem misteriosa pode salvar a humanidade.",
+          "imagem": "assets/images/livros/josh-felise-yIMy3ERBc3o-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "nome": "Rafaela Costa",
+      "genero": "Terror",
+      "biografia": "Especialista em narrativas de horror psicológico que exploram os medos mais profundos da mente humana.",
+      "inicioCarreira": 2019,
+      "nacionalidade": "Brasil",
+      "seguidores": 163000,
+      "destaque": false,
+      "imagem_principal": "assets/images/autores/glen-hodson-NlHGKAZ3jCI-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "O Quarto Escuro",
+          "ano": 2020,
+          "descricao": "Um casal descobre que sua nova casa guarda segredos aterrorizantes.",
+          "imagem": "assets/images/livros/thought-catalog-V5BGaJ0VaLU-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "Voz nas Paredes",
+          "ano": 2022,
+          "descricao": "Uma jornalista investiga desaparecimentos em uma vila isolada.",
+          "imagem": "assets/images/livros/thought-catalog-Q7sGp9MStSY-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "Pesadelos Reais",
+          "ano": 2024,
+          "descricao": "Histórias que borram a linha entre sonho e realidade.",
+          "imagem": "assets/images/livros/tim-alex-1i-P178kxHQ-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "nome": "Marcos Silveira",
+      "genero": "Crônicas",
+      "biografia": "Cronista premiado que captura o cotidiano com humor, ironia e profundidade incomuns.",
+      "inicioCarreira": 2012,
+      "nacionalidade": "Brasil",
+      "seguidores": 231000,
+      "destaque": false,
+      "imagem_principal": "assets/images/autores/christian-buehner-84E44EdD18o-unsplash.jpg",
+      "obras": [
+        {
+          "id": 1,
+          "titulo": "Pequenos Grandes Momentos",
+          "ano": 2014,
+          "descricao": "Crônicas sobre a beleza escondida no dia a dia.",
+          "imagem": "assets/images/livros/mridula-gupta-M5nRkYqfUoE-unsplash.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "A Cidade que Habito",
+          "ano": 2018,
+          "descricao": "Um olhar afetivo e crítico sobre a vida urbana brasileira.",
+          "imagem": "assets/images/livros/elin-melaas-6gjiUmp2k_8-unsplash.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "Tempo Livre",
+          "ano": 2023,
+          "descricao": "Reflexões sobre o que fazemos com os minutos que nos sobram.",
+          "imagem": "assets/images/livros/elin-melaas-K8oOs0oFBME-unsplash.jpg"
+        }
+      ]
+    }
+  ],
   "usuarios": [
     {
       "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
@@ -14,5 +356,17 @@
       "nome": "Usuario Comum",
       "email": "user@abc.com"
     }
+  ],
+  "categorias": [
+    { "id": 1, "nome": "Fantasia" },
+    { "id": 2, "nome": "Ficção Científica" },
+    { "id": 3, "nome": "Romance" },
+    { "id": 4, "nome": "Suspense" },
+    { "id": 5, "nome": "Fantasia Urbana" },
+    { "id": 6, "nome": "Aventura" },
+    { "id": 7, "nome": "Drama" },
+    { "id": 8, "nome": "Distopia" },
+    { "id": 9, "nome": "Terror" },
+    { "id": 10, "nome": "Crônicas" }
   ]
 }

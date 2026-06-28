@@ -1,0 +1,321 @@
+.secao-destaques {
+  background-color: var(--azul);
+}
+
+.secao-destaques .secao-titulo {
+  color: var(--branco);
+}
+
+.secao-destaques .marcador {
+  border-color: var(--bege);
+}
+
+.carousel-item img {
+  height: 480px;
+  object-fit: cover;
+  filter: brightness(0.45);
+  border-radius: var(--raio-card);
+}
+
+.carousel-caption {
+  bottom: 10%;
+  left: 8%;
+  right: 8%;
+  text-align: left;
+}
+
+.badge-genero {
+  display: inline-block;
+  background-color: var(--laranja);
+  color: var(--azul-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.carousel-caption h3 {
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 560px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.btn-perfil {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--laranja);
+  color: var(--azul-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 9px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--azul-escuro);
+  box-shadow: 3px 3px 0 var(--azul-escuro);
+  text-decoration: none;
+  transition: transform 0.1s, box-shadow 0.1s, background 0.15s;
+}
+
+.btn-perfil:hover {
+  background-color: #f0a050;
+  box-shadow: 4px 4px 0 var(--azul-escuro);
+}
+
+.card {
+  border: 2px solid var(--azul);
+  border-radius: var(--raio-card);
+  box-shadow: var(--sombra-card);
+  will-change: box-shadow;
+  transition: box-shadow 0.15s;
+}
+
+.card:hover {
+  box-shadow: 6px 6px 0 var(--azul);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  border-bottom: 2px solid var(--azul);
+  border-radius: calc(var(--raio-card) - 2px) calc(var(--raio-card) - 2px) 0 0;
+}
+
+.card-img-placeholder {
+  height: 200px;
+  background-color: var(--bege);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--bege-medio);
+  border-bottom: 2px solid var(--azul);
+}
+
+.card-title {
+  font-family: var(--fonte-titulo);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--azul);
+  margin-bottom: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.card-title:hover {
+  color: var(--marrom);
+}
+
+.card-genero {
+  font-family: var(--fonte-titulo);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--marrom);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  color: var(--texto-fraco);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: 1.5px dashed var(--bege-medio);
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-ver-perfil {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-family: var(--fonte-titulo);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: 10px;
+  border: 2px solid var(--azul-escuro);
+  box-shadow: 2px 2px 0 var(--azul-escuro);
+  text-decoration: none;
+  transition: transform 0.1s, box-shadow 0.1s, background 0.15s;
+}
+
+.btn-ver-perfil:hover {
+  background-color: var(--laranja);
+  color: var(--azul-escuro);
+  box-shadow: 3px 3px 0 var(--azul-escuro);
+}
+
+.card-dev {
+  background-color: var(--branco);
+  border: 2px solid var(--azul);
+  border-radius: 18px;
+  box-shadow: var(--sombra-card);
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.dev-foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--azul);
+  margin: 0 auto 16px;
+  display: block;
+}
+
+.dev-nome {
+  font-family: var(--fonte-titulo);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--azul);
+  margin-bottom: 4px;
+}
+
+.dev-desc {
+  font-size: 0.9rem;
+  color: var(--texto-fraco);
+  margin-bottom: 4px;
+}
+
+.dev-universidade {
+  font-family: var(--fonte-titulo);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 20px;
+}
+
+.dev-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dev-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-family: var(--fonte-titulo);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 9px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--azul-escuro);
+  box-shadow: 3px 3px 0 var(--azul-escuro);
+  text-decoration: none;
+  transition: transform 0.1s, background 0.15s;
+}
+
+.dev-link:hover {
+  background-color: var(--laranja);
+  color: var(--azul-escuro);
+}
+
+.pesquisa-wrapper {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--branco);
+  border: 2px solid var(--azul);
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 var(--azul);
+  overflow: hidden;
+  max-width: 480px;
+}
+
+.pesquisa-input {
+  flex: 1;
+  padding: 11px 16px;
+  font-family: var(--fonte-corpo);
+  font-size: 0.85rem;
+  color: var(--azul);
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.pesquisa-input::placeholder {
+  color: var(--bege-medio);
+  font-style: italic;
+}
+
+.pesquisa-btn {
+  background-color: var(--laranja);
+  color: var(--azul-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0 20px;
+  border: none;
+  border-left: 2px solid var(--azul);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.pesquisa-btn:hover {
+  background-color: #f0a050;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 240px;
+  }
+
+  .carousel-caption {
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption p {
+    display: none;
+  }
+}

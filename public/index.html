@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iBook — Descubra Autores e Obras</title>
+  <link rel="icon" href="assets/images/logo/logo-icon-ibook.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo/logo-horizontal.png" alt="iBook" class="navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+          <li class="nav-item"><a class="nav-link" href="#autores">Autores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="visualizacao.html"><i class="fa-solid fa-chart-bar me-1"></i>Estatísticas</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro_autor.html"><i class="fa-solid fa-plus me-1"></i>Cadastrar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="destaques" class="secao-destaques py-5">
+      <div class="container">
+        <h2 class="secao-titulo mb-4"><span class="marcador"></span>Autores em Destaque</h2>
+        <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators" id="carousel-indicators"></div>
+          <div class="carousel-inner" id="carousel-inner"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="autores" class="py-5 bg-bege">
+      <div class="container">
+        <h2 class="secao-titulo mb-4"><span class="marcador"></span>Todos os Autores</h2>
+        <div class="pesquisa-wrapper mb-4">
+          <input type="text" id="input-pesquisa" class="pesquisa-input" placeholder="Pesquisar por nome ou biografia...">
+          <button id="btn-pesquisa" class="pesquisa-btn"><i class="fa-solid fa-magnifying-glass me-1"></i>Buscar</button>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="lista-autores"></div>
+      </div>
+    </section>
+
+    <section id="sobre" class="py-5">
+      <div class="container">
+        <h2 class="secao-titulo mb-4"><span class="marcador"></span>Sobre o Desenvolvedor</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card-dev">
+              <img src="assets/images/desenvolvedor_image.jpg" alt="Bernardo Diniz" class="dev-foto">
+              <h3 class="dev-nome">Bernardo Diniz</h3>
+              <p class="dev-desc">Desenvolvedor de Software Jr e Universitário</p>
+              <p class="dev-universidade"><i class="fa-solid fa-school me-2 text-laranja"></i>Engenharia de Software - PUC Minas</p>
+              <div class="dev-links">
+                <a href="https://github.com/bernardooldz" target="_blank" class="dev-link">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/bernardo-diniz-/" target="_blank" class="dev-link">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-custom py-4">
+    <div class="container footer-inner">
+      <img src="assets/images/logo/logo-horizontal.png" alt="iBook" class="footer-logo">
+      <p class="mb-0"><strong>iBook</strong> &copy; 2025 — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
