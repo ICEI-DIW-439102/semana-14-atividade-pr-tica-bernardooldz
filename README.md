@@ -8,17 +8,58 @@ Com base nos tipos de projetos escohidos, você deve propor **visualizações qu
 
 Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fullcalendar.io/), [Chart.js](https://www.chartjs.org/), [Mapbox](https://docs.mapbox.com/api/), para citar algumas.
 
+A partir dos dados do projeto iBook, foram implementadas visualizações dinâmicas com **Chart.js** para apresentar as informações dos autores cadastrados de forma clara e interativa.
+
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- **Nome:** Bernardo Diniz
+- **Matrícula:** 908681
+- **Projeto:** iBook — Plataforma de Descoberta de Autores e Obras Literárias
+- **Descrição:** Plataforma web para explorar autores de literatura e suas obras. Esta etapa adiciona uma página de estatísticas com gráficos interativos gerados a partir dos dados da API.
 
-**Print da tela com a implementação**
+---
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+## Visualização implementada: Gráficos com Chart.js
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+A página `visualizacao.html` exibe dois gráficos carregados em tempo real via Fetch API:
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+### Gráfico 1 — Autores por Gênero Literário
+
+Gráfico de barras verticais que agrupa os autores cadastrados por gênero literário. Os dados são buscados via `GET /autores` e processados em JavaScript para contagem por gênero.
+
+### Gráfico 2 — Top 5 Autores por Seguidores
+
+Gráfico de barras horizontais que exibe os 5 autores com maior número de seguidores. Os dados são ordenados e fatiados antes de renderizar no Chart.js.
+
+---
+
+## Estrutura do db.json
+
+O arquivo `db/db.json` contém três coleções:
+
+- **`autores`** — 10 autores com nome, gênero, biografia, seguidores, obras e destaque
+- **`categorias`** — 10 gêneros literários
+- **`usuarios`** — usuários do sistema (reservado para autenticação futura)
+
+---
+
+## Rotas da API utilizadas
+
+| Método | Endpoint | Função |
+|--------|----------|--------|
+| GET | `/autores` | Lista todos os autores (Home + Gráficos) |
+| GET | `/autores?destaque=true` | Lista autores em destaque (Carrossel) |
+| GET | `/autores/:id` | Busca autor por ID (Detalhe) |
+| POST | `/autores` | Cadastra novo autor (Formulário) |
+
+---
+
+## Prints do trabalho
+![Print: Tela de estatísticas](./public/assets/docs/img_tela_estatisticas.png)
+
+### Gráfico — Autores por Gênero Literário
+![Print: Gráfico — Autores por Gênero Literário](./public/assets/docs/img_grafico_genero.png)
+
+### Gráfico — Top 5 Autores por Seguidores
+
+![Print: Gráfico — Top 5 Autores por Seguidores](./public/assets/docs/img_grafico_seguidores.png)
